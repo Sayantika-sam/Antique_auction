@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AntiqueAuction — a curated heritage marketplace for antiques, vintage collectibles and rare treasures. Browse, value, authenticate and bid on timeless pieces.">
+    <meta name="theme-color" content="#2D1B12">
+    <title>AntiqueAuction — Timeless Treasures, Stories Retold</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%BA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===================== HEADER / NAVIGATION ===================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <nav class="navbar" aria-label="Primary navigation">
+                <a class="brand" href="#/home" aria-label="AntiqueAuction home">
+                    <span class="brand-mark" aria-hidden="true">🏺</span>
+                    <span class="brand-text">
+                        <strong>Antique<span>Auction</span></strong>
+                        <small>CURATED HERITAGE</small>
+                    </span>
+                </a>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a class="nav-link" href="#/home" data-link>Home</a></li>
+
+                    <li class="has-dropdown">
+                        <button class="nav-link nav-drop" aria-expanded="false">Explore <i class="fa-solid fa-chevron-down"></i></button>
+                        <ul class="dropdown">
+                            <li><a href="#/antiques" data-link><i class="fa-solid fa-layer-group"></i> All Antiques</a></li>
+                            <li><a href="#/bidding" data-link><i class="fa-solid fa-gavel"></i> Live Bidding</a></li>
+                            <li><a href="#/gallery" data-link><i class="fa-solid fa-images"></i> Virtual Gallery</a></li>
+                            <li><a href="#/curators" data-link><i class="fa-solid fa-star"></i> Curator's Picks</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <button class="nav-link nav-drop" aria-expanded="false">Services <i class="fa-solid fa-chevron-down"></i></button>
+                        <ul class="dropdown">
+                            <li><a href="#/valuation" data-link><i class="fa-solid fa-scale-balanced"></i> Expert Valuation</a></li>
+                            <li><a href="#/authenticity" data-link><i class="fa-solid fa-shield-halved"></i> Authenticity Check</a></li>
+                            <li><a href="#/certificates" data-link><i class="fa-solid fa-file-certificate"></i> Certificates</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <button class="nav-link nav-drop" aria-expanded="false">Dashboards <i class="fa-solid fa-chevron-down"></i></button>
+                        <ul class="dropdown">
+                            <li><a href="#/dashboard/collector" data-link><i class="fa-solid fa-user-tie"></i> Collector Dashboard</a></li>
+                            <li><a href="#/dashboard/seller" data-link><i class="fa-solid fa-store"></i> Seller Dashboard</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link" href="#/about" data-link>About</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <div id="authArea" class="auth-area"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===================== MAIN CONTENT (SPA) ===================== -->
+    <main id="main" tabindex="-1">
+        <div id="app"></div>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand brand-footer" href="#/home">
+                        <span class="brand-mark" aria-hidden="true">🏺</span>
+                        <span class="brand-text">
+                            <strong>Antique<span>Auction</span></strong>
+                            <small>CURATED HERITAGE</small>
+                        </span>
+                    </a>
+                    <p>Connecting collectors, historians and enthusiasts with unique historical pieces since 1998. Every object has a story — we help you find yours.</p>
+                    <div class="socials">
+                        <a href="#/about" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#/about" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#/about" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#/about" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#/antiques" data-link>All Antiques</a></li>
+                        <li><a href="#/bidding" data-link>Live Bidding</a></li>
+                        <li><a href="#/gallery" data-link>Virtual Gallery</a></li>
+                        <li><a href="#/curators" data-link>Curator's Picks</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#/valuation" data-link>Expert Valuation</a></li>
+                        <li><a href="#/authenticity" data-link>Authenticity Check</a></li>
+                        <li><a href="#/certificates" data-link>Certificates</a></li>
+                        <li><a href="#/dashboard/seller" data-link>Sell With Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#/antiques" data-link>Furniture &amp; Decor</a></li>
+                        <li><a href="#/antiques" data-link>Art &amp; Paintings</a></li>
+                        <li><a href="#/antiques" data-link>Jewelry &amp; Timepieces</a></li>
+                        <li><a href="#/antiques" data-link>Rare Books &amp; Manuscripts</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Visit the Auction House</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> 42 Heritage Lane, Chennai, India</li>
+                        <li><i class="fa-solid fa-phone"></i> +91 96000 95045</li>
+                        <li><i class="fa-solid fa-envelope"></i> mail@freeinternships.in</li>
+                        <li><i class="fa-solid fa-clock"></i> Mon – Sat, 11:00 AM – 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <div>
+                    <h4>The Collector's Letter</h4>
+                    <p>New arrivals, auction highlights and restoration stories — once a month, no noise.</p>
+                </div>
+                <form class="newsletter-form" data-form="newsletter">
+                    <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+                    <button class="btn btn-gold" type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> AntiqueAuction · Built as a frontend internship project for Data Alcott Systems · Task ID WD-AUC-005</p>
+                <p class="disclaimer">Demonstration platform — no real transactions are processed.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toastRoot" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+    <div id="modalRoot" class="modal-root" aria-hidden="true"></div>
+    <div id="printArea" class="print-area" aria-hidden="true"></div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="data.js"></script>
+    <script src="views.js"></script>
+    <script src="views2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
