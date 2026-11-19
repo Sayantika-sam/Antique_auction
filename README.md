@@ -172,8 +172,8 @@ Screenshots are in the [`screenshots/`](screenshots/) folder:
 
 > Replace the placeholders below with your own links before submitting.
 
-- **GitHub Repository:** `https://github.com/your-username/antique-auction-platform`
-- **Live Website:** `https://your-username.github.io/antique-auction-platform/`
+- **GitHub Repository:** https://github.com/Sayantika-sam/Antique_auction.git
+- **Live Website (GitHub Pages, once enabled):** `https://sayantika-sam.github.io/Antique_auction/`
 - **YouTube Demo:** `https://www.youtube.com/watch?v=YOUR_VIDEO_ID`
 - **Blog Post:** `https://www.freeinternships.in/blog/`
 
